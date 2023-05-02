@@ -1,0 +1,499 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(244, 244, 251);
+}
+/* this is navigation css */
+nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    z-index: 1;
+}
+
+  .upperleft{
+    display: flex;
+    padding: 5px;
+    width: 23%;
+  }
+
+  .upperleft i{
+    position:absolute;
+    margin-left: 9.5%;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .upperleft input{
+    height: 35px;
+    border-radius: 2rem;
+    margin-left: 2.5px;
+    padding-left: 29px;
+  } 
+
+  .upperleft img{
+    height: 35px;
+  }
+
+  .uppermid{
+    display: flex;
+    width: 55%;
+  }
+
+  .uppermid i{
+    margin-left: 14%;
+    margin-top: 5px;
+    font-size: 22.5px;
+    color: rgb(49, 49, 171);
+  }
+
+  .uppermid i:hover{
+    color: blue;
+  }
+
+  .upperright{
+    display: flex;
+    padding-left: 8%;
+    width: 21%;
+  }
+
+  .upperright img{
+    height: 40px;
+    border-radius: 2rem;
+  }
+
+  .upperright i{
+    margin-left: 10%;
+    margin-top: 10px;
+    font-size: 22.5px;
+  }
+
+  .upperright i:hover{
+    color: blue;
+  }
+  
+/* declearing megacontainer css properties. */
+.megacontainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+/* cointainer css properties which contain left-bar*/
+.container{
+    padding-top: 50px;
+    height: 90vh;
+    width: 20%;
+    display: flex;
+}
+
+.container .left{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  height: 92vh;
+  position: fixed;
+  margin: 5px;
+  width: 20%;
+  background-color: rgba(230, 236, 241, 0.984);
+  border-radius: 1rem;
+}
+
+.container .left i{
+  color: rgb(103, 106, 73);
+}
+
+    #leftDetail1,#leftDetail2,#leftDetail3,
+    #leftDetail4,#leftDetail5,#leftDetail6
+    {
+      padding-left: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 50px;
+    }
+
+    i{ font-size: 22px;color: rgb(0, 76, 76);}
+    
+    #leftDetail1:hover { background-color: rgba(196, 188, 188, 0.725);transition: 0.5s;border-radius: 1rem;}
+    #leftDetail2:hover { background-color: rgba(196, 188, 188, 0.725);transition: 0.5s;border-radius: 1rem;}
+    #leftDetail3:hover { background-color: rgba(196, 188, 188, 0.725);transition: 0.5s;border-radius: 1rem;}
+    #leftDetail4:hover { background-color: rgba(196, 188, 188, 0.725);transition: 0.5s;border-radius: 1rem;}
+    #leftDetail5:hover { background-color: rgba(196, 188, 188, 0.725);transition: 0.5s;border-radius: 1rem;}
+    #leftDetail6:hover { background-color: rgba(196, 188, 188, 0.725);transition: 0.5s;border-radius: 1rem;}
+    
+    #leftDetail1 p{ color: blue; margin-left: 20px;}
+    #leftDetail2 p{ color: blue; margin-left: 35px;}
+    #leftDetail3 p{ color: blue; margin-left: 44px;}
+    #leftDetail4 p{ color: blue; margin-left: 35px;}
+    #leftDetail5 p{ color: blue; margin-left: 34px;}
+    #leftDetail6 p{ color: blue; margin-left: 35px;}
+
+/* container2 contain of mid and left bar properties */
+.container2{
+  padding-top: 50px;
+  height: 100vh;
+  width: 80%;
+  height: 200vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.container2 .mid{
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: 78%;
+    margin: 10px;
+    border-radius: 1rem;
+  }
+
+  /* this contain stories and reels css properties */
+  #top{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-bottom:1px solid rgba(0, 0, 0, 0.173) ;
+  }
+  
+  .side1:hover { color:rgb(10, 43, 229);background-color: rgba(196, 188, 188, 0.725);transition: 0.5s;border-radius: 1rem;}
+  .side2:hover { color:rgb(10, 43, 229);background-color: rgba(196, 188, 188, 0.725);transition: 0.5s;border-radius: 1rem;}
+
+  .side1{
+    position: relative;
+    width: 55.4vh;
+    height: 50px;
+    padding-top: 12px;
+    border-radius: 1rem;
+  }
+  
+  .side1::after{
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    bottom: -5px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    background: rgb(10, 43, 229);
+    transition: 0.3s;
+  }
+
+  .side1:hover::after{
+    width: 50vh;
+  }
+  
+  .side2{
+    position: relative;
+    width: 55.4vh;
+    height: 50px;
+    padding-top: 12px;
+    border-radius: 1rem;
+  }
+
+  .side2::after{
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    bottom: -5px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    background: rgb(10, 43, 229);
+    transition: 0.3s;
+  }
+  
+  .side2:hover::after{
+    width: 50vh;
+  }
+
+  /*this is Stories photos properties  */
+  .t-mid{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    height: 25vh;
+    width: 100%;
+  }
+
+  .border{width:87%;border: 1px solid rgb(225, 217, 217);border-radius: 1rem;}
+
+  .renjen i{color: rgb(58, 58, 205);padding-left: 43%;font-size: 20px;}
+  .renjen p{color: rgb(58, 58, 205); padding-left: 18%;}
+
+  .renjen{
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    border-radius: 1rem;
+    background-color: rgb(212, 220, 226);
+  }
+
+  .renjen img{
+    height: 135px;
+    width: 135px;
+    border-radius: 1.5rem;
+    margin-left: 10px;
+    padding-top: 5px;
+    text-align: center;
+  }
+
+  .john{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Photo/profile-pic.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    height: 24vh;
+    width: 16%;
+    border-radius: 1rem;
+    background-color: rgb(212, 220, 226);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .john:hover{
+    background-image: url(/Photo/profile-pic.png);
+    height: 23vh;
+  }
+
+  .john img{
+    height: 5.5vh; 
+    width: 5.5vh;
+    border-radius: 40px;
+    border: 4px solid rgb(89, 145, 197);
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .bob{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Photo/profile2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    height: 24vh;
+    width: 16%;
+    border-radius: 1rem;
+    background-color: rgb(212, 220, 226);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .bob:hover{
+    background-image: url(/Photo/profile2.png);
+    height: 23vh;
+  }
+
+  .bob img{
+    height: 5.5vh; 
+    width: 5.5vh;
+    border-radius: 40px;
+    border: 4px solid rgb(89, 145, 197);
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .mike{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Photo/profile3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    height: 24vh;
+    width: 16%;
+    border-radius: 1rem;
+    background-color: rgb(212, 220, 226);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .mike:hover{
+    background-image: url(/Photo/profile3.png);
+    height: 23vh;
+  }
+
+  .mike img{
+    height: 5.5vh; 
+    width: 5.5vh;
+    border-radius: 40px;
+    border: 4px solid rgb(89, 145, 197);
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .sun{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Photo/side.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
+    height: 24vh;
+    width: 16%;
+    border-radius: 1rem;
+    background-color: rgb(212, 220, 226);
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .sun:hover{
+    background-image: url(/Photo/side.png);
+    height: 23vh;
+  }
+
+  .sun img{
+    height: 5.5vh; 
+    width: 5.5vh;
+    border-radius: 40px;
+    border: 4px solid rgb(89, 145, 197);
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+/* this contain status bar  */
+  .feed1{
+    height: 15vh;
+    width: 87%;
+    margin-top: 5px;
+    border-radius: 1rem;
+    border: 1px solid rgba(211, 204, 204, 0.868);
+    box-shadow: 5px;
+  }
+
+  .up{display: flex;flex-direction: row;height:8vh;padding-left: 10px;padding-top: 5px;width: 100%;border-bottom: 1px solid rgba(0, 0, 0, 0.165);}
+  .up img{height:6vh;border-radius: 2rem;}
+  .up #input{height:5vh;width: 90%;margin-left:5px;margin-top:5px;padding-left:10px;border-radius: 2rem;}
+
+  .another-up{
+    display: flex;
+    flex-direction: row;
+    height:7vh;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .up1{width: 33.9%;padding-top: 10px;}
+  .up1:hover{background-color: rgb(238, 236, 232);border-radius: 10px;}
+  .up2{width: 33.9%;padding-top: 10px;}
+  .up2:hover{background-color: rgb(238, 236, 232);border-radius: 10px;}
+  .up3{width: 33.9%;padding-top: 10px;}
+  .up3:hover{background-color: rgb(238, 236, 232);border-radius: 10px;}
+
+  /* first post properties */
+  .feed2{
+      height: 100vh;
+      width: 87%;
+      margin-top: 5px;
+      border: 1px solid rgba(216, 195, 195, 0.784);
+      border-radius: 10px;
+    }
+
+  .status1{display:flex;flex-direction:row;height: 8vh;border-bottom: 1px solid rgba(0, 0, 0, 0.149);}
+  .status img{
+    height: 5.5vh; 
+    width: 5.5vh;
+    border-radius: 40px;
+    border: 4px solid rgb(89, 145, 197);
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .status .sec1{width: 7%;}
+  .status .sec2{width: 83%;padding-top: 14px;font-size: 14px;}
+  span i{font-size: 15px;}
+  .sec3 i{font-size: large;padding-top: 15px;padding-left: px;}
+  .sec4 i{font-size: 15px;padding-top: 15px;padding-left: 20px;}
+
+  .status2{height: 4vh; padding-left: 20px; padding-top: 4px;}
+  .photo{background-color: black;}
+  .photo img{height: 75vh;padding-left: 25%;}
+  .react{
+    height: 10vh;
+  }
+
+  /* This properties is used in every post  */
+  .react .up{display:flex;flex-direction:row;height: 5vh;border-bottom: 1px solid black;}
+  .react .down{display:flex;flex-direction:row;height: 5vh;}
+  .react .a, .b, .c{width: 33.9%;text-align: center;margin-top: 10px;}
+  .react .a i{color: blue;}
+  .react .b i{color: blue;}
+  .react .c i{color: blue;}
+  .react .a:hover{background-color:rgba(238, 231, 231, 0.622);}
+  .react .b:hover{background-color:rgba(238, 231, 231, 0.622);}
+  .react .c:hover{background-color:rgba(238, 231, 231, 0.622);}
+
+  .feed3{
+    height: 100vh;
+    width: 87%;
+    margin-top: 10px;
+    border: 1px solid rgba(216, 195, 195, 0.784);
+    border-radius: 10px;
+  }
+
+  .photo2{background-color: white;}
+  .photo2 img{height: 75vh; width:50%; margin-left: 25%;}
+
+  .feed4{
+    height: 100vh;
+    width: 87%;
+    margin-top: 10px;
+    border: 1px solid rgba(216, 195, 195, 0.784);
+    border-radius: 10px;
+  }
+  .photo3 img{height: 75vh; width:100%;}
+
+  .feed5{
+    height: 100vh;
+    width: 87%;
+    margin-top: 10px;
+    border: 1px solid rgba(216, 195, 195, 0.784);
+    border-radius: 10px;
+  }
+  .feed span{font-size: medium;}
+  .photo4 img{ height: 75vh; width:95%;padding-left: 6%;}
+
+  .i{margin-top: 20px;}
+
+/*This is rightside bar */
+  .container2 .right{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    margin-left: 55.4%;
+    margin-top: 10px;
+    height: 90vh;
+    width: 24.5%;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 1rem;
+  }
+
+  .right .atlantic{height: 29vh;width: 98%;display:flex;flex-direction: row;}
+  .atlantic img{padding:5px; margin-top:4px; height: 28vh;}
+  .atlantic p{padding:5px; margin-top:4px; height: 28vh;}
+
+  .right .newton{height: 29vh;width: 98%;display:flex;flex-direction: row;}
+  .newton img{padding:5px; margin-top:4px; height: 28vh;}
+  .newton p{padding:5px; margin-top:4px; height: 28vh;}
+
+  .right .herald{height: 29vh;width: 98%;display:flex;flex-direction: row;}
+  .herald img{padding:5px; margin-top:4px; height: 28vh;}
+  .herald p{padding:5px; margin-top:8px; height: 28vh;}
+
+
+
